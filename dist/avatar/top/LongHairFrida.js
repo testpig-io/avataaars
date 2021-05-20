@@ -16,22 +16,22 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var lodash_1 = require("lodash");
+var uniqueId_1 = require("../../util/uniqueId");
 var facialHair_1 = require("./facialHair");
 var LongHairFrida = /** @class */ (function (_super) {
     __extends(LongHairFrida, _super);
     function LongHairFrida() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
-        _this.filter2 = lodash_1.uniqueId('react-filter-');
-        _this.filter3 = lodash_1.uniqueId('react-filter-');
-        _this.filter4 = lodash_1.uniqueId('react-filter-');
-        _this.filter5 = lodash_1.uniqueId('react-filter-');
-        _this.filter6 = lodash_1.uniqueId('react-filter-');
-        _this.filter7 = lodash_1.uniqueId('react-filter-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.filter1 = uniqueId_1.default('react-filter-');
+        _this.filter2 = uniqueId_1.default('react-filter-');
+        _this.filter3 = uniqueId_1.default('react-filter-');
+        _this.filter4 = uniqueId_1.default('react-filter-');
+        _this.filter5 = uniqueId_1.default('react-filter-');
+        _this.filter6 = uniqueId_1.default('react-filter-');
+        _this.filter7 = uniqueId_1.default('react-filter-');
+        _this.mask1 = uniqueId_1.default('react-mask-');
+        _this.path1 = uniqueId_1.default('react-path-');
+        _this.path2 = uniqueId_1.default('react-path-');
         return _this;
     }
     LongHairFrida.prototype.render = function () {

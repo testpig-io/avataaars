@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { uniqueId } from 'lodash'
+import uniqueId from '../../../util/uniqueId'
 
 export default class ScreamOpen extends React.Component {
   static optionValue = 'ScreamOpen'

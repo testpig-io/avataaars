@@ -16,19 +16,19 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var lodash_1 = require("lodash");
+var uniqueId_1 = require("../../util/uniqueId");
 var facialHair_1 = require("./facialHair");
 var HairColor_1 = require("./HairColor");
 var LongHairBigHair = /** @class */ (function (_super) {
     __extends(LongHairBigHair, _super);
     function LongHairBigHair() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.mask3 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
-        _this.path3 = lodash_1.uniqueId('react-path-');
+        _this.mask1 = uniqueId_1.default('react-mask-');
+        _this.mask2 = uniqueId_1.default('react-mask-');
+        _this.mask3 = uniqueId_1.default('react-mask-');
+        _this.path1 = uniqueId_1.default('react-path-');
+        _this.path2 = uniqueId_1.default('react-path-');
+        _this.path3 = uniqueId_1.default('react-path-');
         return _this;
     }
     LongHairBigHair.prototype.render = function () {

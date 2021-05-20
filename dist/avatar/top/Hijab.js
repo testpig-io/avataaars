@@ -16,17 +16,17 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var lodash_1 = require("lodash");
+var uniqueId_1 = require("../../util/uniqueId");
 var HatColor_1 = require("./HatColor");
 var Hijab = /** @class */ (function (_super) {
     __extends(Hijab, _super);
     function Hijab() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
-        _this.filter1 = lodash_1.uniqueId('react-filter-');
-        _this.mask1 = lodash_1.uniqueId('react-mask-');
-        _this.mask2 = lodash_1.uniqueId('react-mask-');
-        _this.path1 = lodash_1.uniqueId('react-path-');
-        _this.path2 = lodash_1.uniqueId('react-path-');
+        _this.filter1 = uniqueId_1.default('react-filter-');
+        _this.mask1 = uniqueId_1.default('react-mask-');
+        _this.mask2 = uniqueId_1.default('react-mask-');
+        _this.path1 = uniqueId_1.default('react-path-');
+        _this.path2 = uniqueId_1.default('react-path-');
         return _this;
     }
     Hijab.prototype.render = function () {

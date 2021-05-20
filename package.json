@@ -23,7 +23,6 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "lodash": ">=4.17.11",
     "prop-types": "^15.6.0"
   },
   "importSort": {
