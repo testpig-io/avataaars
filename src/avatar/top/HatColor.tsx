@@ -44,7 +44,7 @@ const Red = makeColor('Red', '#FF5C5C')
 const White = makeColor('White', '#FFFFFF')
 
 export default class Colors extends React.Component<Props> {
-  render() {
+  render () {
     return (
       <Selector
         option={HatColorOption}
