@@ -29,12 +29,9 @@ npm install avataaars --save
 
 if you are using npm. Then, in your React app, import the Avataaar component and put it where you like it to be, for example
 
-```jsx
-import * as React from 'react'
-import Avatar from 'avataaars'
+```jsximport Avatar from 'avataaars'
 
-export default class MyComponent extends React.Component {
-  render () {
+export default function MyComponent () {
     return 
       <div>
         Your avatar:
@@ -53,18 +50,14 @@ export default class MyComponent extends React.Component {
           skinColor='Light'
         />
       </div>
-  }
 }
 ```
 
 To showcase individual pieces of the avatar you can use the Piece component, for example:
 
-```jsx
-import * as React from 'react'
-import {Piece} from 'avataaars';
+```jsximport {Piece} from 'avataaars';
 
-export default class MyComponent extends React.Component {
-  render () {
+export default function MyComponent () {
     return 
       <div>
         <Piece pieceType="mouth" pieceSize="100" mouthType="Eating"/>
@@ -77,7 +70,6 @@ export default class MyComponent extends React.Component {
         <Piece pieceType="graphics" pieceSize="100" graphicType="Skull" />
         <Piece pieceType="skin" pieceSize="100" skinColor="Brown" />
       </div>
-  }
 }
 ```
 

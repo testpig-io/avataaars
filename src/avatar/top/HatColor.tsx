@@ -1,70 +1,51 @@
-import * as React from 'react'
-
-import { HatColorOption, Selector } from '../../options'
+import HatColorName from './HatColorName'
+import { useContext } from 'react'
+import AvatarContext from '../AvatarContext'
+import Color from '../Color'
 
 export interface Props {
   maskID: string
   defaultColor?: string
 }
 
-function makeColor (name: string, color: string) {
-  class ColorComponent extends React.Component<Props> {
-    render () {
-      return (
-        <g
-          id='Color/Palette/Gray-01'
-          mask={`url(#${this.props.maskID})`}
-          fillRule='evenodd'
-          fill={color}>
-          <rect id='🖍Color' x='0' y='0' width='264' height='280' />
-        </g>
-      )
-    }
-  }
-  const anyComponent = ColorComponent as any
-  anyComponent.displayName = name
-  anyComponent.optionValue = name
-  return anyComponent
+export default function HatColor ({ maskID, defaultColor }: Props) {
+  const color = useContext(AvatarContext).hatColor ?? defaultColor
+  return <Color maskID={maskID} color={getHatColorCode(color)} fillRule='evenodd'/>
 }
 
-const Black = makeColor('Black', '#262E33')
-const Blue01 = makeColor('Blue01', '#65C9FF')
-const Blue02 = makeColor('Blue02', '#5199E4')
-const Blue03 = makeColor('Blue03', '#25557C')
-const Gray01 = makeColor('Gray01', '#E6E6E6')
-const Gray02 = makeColor('Gray02', '#929598')
-const Heather = makeColor('Heather', '#3C4F5C')
-const PastelBlue = makeColor('PastelBlue', '#B1E2FF')
-const PastelGreen = makeColor('PastelGreen', '#A7FFC4')
-const PastelOrange = makeColor('PastelOrange', '#FFDEB5')
-const PastelRed = makeColor('PastelRed', '#FFAFB9')
-const PastelYellow = makeColor('PastelYellow', '#FFFFB1')
-const Pink = makeColor('Pink', '#FF488E')
-const Red = makeColor('Red', '#FF5C5C')
-const White = makeColor('White', '#FFFFFF')
-
-export default class Colors extends React.Component<Props> {
-  render () {
-    return (
-      <Selector
-        option={HatColorOption}
-        defaultOption={this.props.defaultColor || Gray01}>
-        <Black maskID={this.props.maskID} />
-        <Blue01 maskID={this.props.maskID} />
-        <Blue02 maskID={this.props.maskID} />
-        <Blue03 maskID={this.props.maskID} />
-        <Gray01 maskID={this.props.maskID} />
-        <Gray02 maskID={this.props.maskID} />
-        <Heather maskID={this.props.maskID} />
-        <PastelBlue maskID={this.props.maskID} />
-        <PastelGreen maskID={this.props.maskID} />
-        <PastelOrange maskID={this.props.maskID} />
-        <PastelRed maskID={this.props.maskID} />
-        <PastelYellow maskID={this.props.maskID} />
-        <Pink maskID={this.props.maskID} />
-        <Red maskID={this.props.maskID} />
-        <White maskID={this.props.maskID} />
-      </Selector>
-    )
+function getHatColorCode (color?: string) {
+  if (color && color.startsWith('#')) return color
+  switch (color) {
+    case HatColorName.Black:
+      return '#262E33'
+    case HatColorName.Blue01:
+      return '#65C9FF'
+    case HatColorName.Blue02:
+      return '#5199E4'
+    case HatColorName.Blue03:
+      return '#25557C'
+    case HatColorName.Gray02:
+      return '#929598'
+    case HatColorName.Heather:
+      return '#3C4F5C'
+    case HatColorName.PastelBlue:
+      return '#B1E2FF'
+    case HatColorName.PastelGreen:
+      return '#A7FFC4'
+    case HatColorName.PastelOrange:
+      return '#FFDEB5'
+    case HatColorName.PastelRed:
+      return '#FFAFB9'
+    case HatColorName.PastelYellow:
+      return '#FFFFB1'
+    case HatColorName.Pink:
+      return '#FF488E'
+    case HatColorName.Red:
+      return '#FF5C5C'
+    case HatColorName.White:
+      return '#FFFFFF'
+    case HatColorName.Gray01:
+    default:
+      return '#E6E6E6'
   }
 }
