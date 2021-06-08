@@ -1,4 +1,3 @@
-import { CSSProperties } from 'react'
 import ClotheType from './clothes/ClotheType'
 import GraphicType from './clothes/GraphicType'
 import EyebrowType from './face/eyebrow/EyebrowType'
@@ -10,7 +9,6 @@ import MouthType from './face/mouth/MouthType'
 
 type AvatarProps = {
   circle?: boolean
-  style?: CSSProperties
   topType?: TopType
   accessoriesType?: AccessoriesType
   hairColor?: string

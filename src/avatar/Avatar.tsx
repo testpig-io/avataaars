@@ -4,15 +4,16 @@ import Face from './face'
 import Top from './top'
 import Accessories from './top/accessories'
 import uniqueId from '../util/uniqueId'
-import { CSSProperties, useMemo } from 'react'
+import { SVGProps, useMemo } from 'react'
 import AvatarProps from './AvatarProps'
 import AvatarContext from './AvatarContext'
 
-type Props = AvatarProps & {
-  style?: CSSProperties
-}
+type Props = AvatarProps & SVGProps<SVGSVGElement>
 
-export default function Avatar ({ style, circle, ...props }: Props) {
+export default function Avatar ({
+                                  style, circle, topType, accessoriesType, hairColor, facialHairType, facialHairColor, clotheType, graphicType,
+                                  eyeType, eyebrowType, mouthType, skinColor, hatColor, ...props
+                                }: Props) {
   const path1 = useMemo(() => uniqueId('react-path-'), [])
   const path2 = useMemo(() => uniqueId('react-path-'), [])
   const path3 = useMemo(() => uniqueId('react-path-'), [])
@@ -20,9 +21,10 @@ export default function Avatar ({ style, circle, ...props }: Props) {
   const mask2 = useMemo(() => uniqueId('react-mask-'), [])
   const mask3 = useMemo(() => uniqueId('react-mask-'), [])
   return (
-    <AvatarContext.Provider value={props}>
+    <AvatarContext.Provider
+      value={{ topType, accessoriesType, hairColor, facialHairType, facialHairColor, clotheType, graphicType, eyeType, mouthType, skinColor, hatColor }}>
       <svg width='264px' height='280px' viewBox='0 0 264 280' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'
-           style={style}>
+           style={style} {...props}>
         <desc>Created with getavataaars.com</desc>
         <defs>
           <circle id={path1} cx='120' cy='120' r='120'/>
