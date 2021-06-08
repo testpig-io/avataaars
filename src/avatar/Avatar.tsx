@@ -11,7 +11,7 @@ import AvatarContext from './AvatarContext'
 type Props = AvatarProps & SVGProps<SVGSVGElement>
 
 export default function Avatar ({
-                                  style, circle, topType, accessoriesType, hairColor, facialHairType, facialHairColor, clotheType, graphicType,
+                                  style, circle, topType, accessoriesType, hairColor, facialHairType, facialHairColor, clotheType, clotheColor, graphicType,
                                   eyeType, eyebrowType, mouthType, skinColor, hatColor, ...props
                                 }: Props) {
   const path1 = useMemo(() => uniqueId('react-path-'), [])
@@ -21,8 +21,9 @@ export default function Avatar ({
   const mask2 = useMemo(() => uniqueId('react-mask-'), [])
   const mask3 = useMemo(() => uniqueId('react-mask-'), [])
   return (
-    <AvatarContext.Provider
-      value={{ topType, accessoriesType, hairColor, facialHairType, facialHairColor, clotheType, graphicType, eyeType, mouthType, skinColor, hatColor }}>
+    <AvatarContext.Provider value={{
+      topType, accessoriesType, hairColor, facialHairType, facialHairColor, clotheType, clotheColor, graphicType, eyeType, mouthType, skinColor, hatColor
+    }}>
       <svg width='264px' height='280px' viewBox='0 0 264 280' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'
            style={style} {...props}>
         <desc>Created with getavataaars.com</desc>
