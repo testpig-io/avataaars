@@ -17,6 +17,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
   "peerDependencies": {
     "react": "^17.0.0"
   },
