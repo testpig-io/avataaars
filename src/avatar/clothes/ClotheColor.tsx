@@ -34,9 +34,9 @@ function getClothColor (color?: string) {
     case ClotheColorName.PastelOrange:
       return '#FFDEB5'
     case ClotheColorName.PastelRed:
-      return '#FFFFB1'
-    case ClotheColorName.PastelYellow:
       return '#FFAFB9'
+    case ClotheColorName.PastelYellow:
+      return '#FFFFB1'
     case ClotheColorName.Red:
       return '#FF5C5C'
     case ClotheColorName.Pink:
