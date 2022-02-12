@@ -22,7 +22,8 @@ export default function Avatar ({
   const mask3 = useMemo(() => uniqueId('react-mask-'), [])
   return (
     <AvatarContext.Provider value={{
-      topType, accessoriesType, hairColor, facialHairType, facialHairColor, clotheType, clotheColor, graphicType, eyeType, mouthType, skinColor, hatColor
+      topType, accessoriesType, hairColor, facialHairType, facialHairColor, clotheType, clotheColor, graphicType, eyeType, eyebrowType, mouthType, skinColor,
+      hatColor
     }}>
       <svg width='264px' height='280px' viewBox='0 0 264 280' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlnsXlink='http://www.w3.org/1999/xlink'
            style={style} {...props}>
