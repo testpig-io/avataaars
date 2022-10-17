@@ -20,10 +20,10 @@ const LongHairCurly: FC = ({ children }) => {
         <use xlinkHref={'#' + path1}/>
       </mask>
       <g mask={`url(#${mask1})`}>
-        <g transform='translate(-1.000000, 0.000000)'>
+        <g transform='translate(-1, 0)'>
           <path fillOpacity='0.16' fill='#000000' fillRule='evenodd'
                 d='M105.984735,27.7643628 C114.013215,26.6267967 122.796163,26 132,26 C142.358003,26 152.182939,26.7938545 160.999342,28.2161842 C183.451688,38.7497687 199,61.559133 199,88 L199,105.044138 C187.461887,104.672508 173.831239,90.7644306 166.449951,70.7992877 C156.312295,72.8351061 144.547256,74 132,74 C120.038684,74 108.788234,72.9413637 98.9808476,71.0787685 C91.6758772,90.6271291 78.3831001,104.301811 67,105.021902 L67,88 L67,88 C67,61.1745453 83.0039076,38.0870034 105.984735,27.7643628 Z'/>
-          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(25.000000, 10.000000)'>
+          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(25, 10)'>
             <mask id={mask2} fill='white'>
               <use xlinkHref={'#' + path2}/>
             </mask>

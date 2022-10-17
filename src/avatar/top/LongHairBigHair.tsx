@@ -24,15 +24,15 @@ const LongHairBigHair: FC = ({ children }) => {
         <use xlinkHref={'#' + path1}/>
       </mask>
       <g mask={`url(#${mask2})`}>
-        <g transform='translate(-1.000000, 0.000000)'>
-          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(16.000000, 13.000000)'>
+        <g transform='translate(-1, 0)'>
+          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(16, 13)'>
             <mask id={mask3} fill='white'>
               <use xlinkHref={'#' + path2}/>
             </mask>
             <use fill='#314756' xlinkHref={'#' + path2}/>
             <HairColor maskID={mask3}/>
           </g>
-          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(16.000000, 13.000000)'>
+          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(16, 13)'>
             <mask id={mask1} fill='white'>
               <use xlinkHref={'#' + path3}/>
             </mask>

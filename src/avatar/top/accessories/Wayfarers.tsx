@@ -8,7 +8,7 @@ export default function Wayfarers () {
   const linearGradient1 = useMemo(() => uniqueId('react-linear-gradient-'), [])
 
   return (
-    <g fill='none' transform='translate(62.000000, 85.000000)' strokeWidth='1'>
+    <g fill='none' transform='translate(62, 85)' strokeWidth='1'>
       <defs>
         <filter x='-0.8%' y='-2.4%' width='101.6%' height='109.8%' filterUnits='objectBoundingBox' id={filter1}>
           <feOffset dx='0' dy='2' in='SourceAlpha' result='shadowOffsetOuter1'/>
@@ -27,7 +27,7 @@ export default function Wayfarers () {
         <path id={path2}
               d='M106.486068,17.5714286 C106.486068,27.2737857 98.2388636,35.1428571 84.4886364,35.1428571 L81.7385909,35.1428571 C67.9912955,35.1428571 62.4912045,27.2708571 62.4912045,17.5714286 L62.4912045,17.5714286 C62.4912045,7.86614286 63.7753409,0 83.0227273,0 L85.9545455,0 C105.199,0 106.486068,7.86614286 106.486068,17.5714286 L106.486068,17.5714286 Z'/>
       </defs>
-      <g filter={`url(#${filter1})`} transform='translate(7.000000, 7.000000)'>
+      <g filter={`url(#${filter1})`} transform='translate(7, 7)'>
         <g transform='translate(10.795455, 2.928571)' fillRule='nonzero'>
           <g>
             <use fillOpacity='0.700000048' fill='#000000' fillRule='evenodd' xlinkHref={'#' + path1}/>

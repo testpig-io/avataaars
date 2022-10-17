@@ -23,13 +23,13 @@ const WinterHat2: FC = ({ children }) => {
       <mask id={mask1} fill='white'>
         <use xlinkHref={'#' + path3}/>
       </mask>
-      <g transform='translate(-1.000000, 0.000000)'>
-        <g strokeWidth='1' fillRule='evenodd' transform='translate(61.000000, 0.000000)'>
-          <g transform='translate(0.000000, 176.000000)' fill='#F4F4F4'>
+      <g transform='translate(-1, 0)'>
+        <g strokeWidth='1' fillRule='evenodd' transform='translate(61, 0)'>
+          <g transform='translate(0, 176)' fill='#F4F4F4'>
             <circle cx='9' cy='65' r='9'/>
             <rect x='8' y='0' width='2' height='58'/>
           </g>
-          <g transform='translate(126.000000, 168.000000)' fill='#F4F4F4'>
+          <g transform='translate(126, 168)' fill='#F4F4F4'>
             <circle cx='9' cy='65' r='9'/>
             <rect x='8' y='0' width='2' height='58'/>
           </g>
@@ -40,12 +40,12 @@ const WinterHat2: FC = ({ children }) => {
           <use fill='#F4F4F4' xlinkHref={'#' + path1}/>
           <HatColor maskID={mask2} defaultColor='Blue01'/>
           <rect fillOpacity='0.2' fill='#000000' x='-1' y='21' width='146' height='46' mask={`url(#${mask2})`}/>
-          <g transform='translate(29.000000, 32.000000)' fill='#FFFFFF' fillOpacity='0.5'>
-            <polygon transform='translate(12.500000, 9.000000) rotate(180.000000) translate(-12.500000, -9.000000)' points='12.5 0 25 18 0 18'/>
-            <polygon transform='translate(43.500000, 9.000000) rotate(180.000000) translate(-43.500000, -9.000000)' points='43.5 0 56 18 31 18'/>
-            <polygon transform='translate(74.500000, 9.000000) rotate(180.000000) translate(-74.500000, -9.000000)' points='74.5 0 87 18 62 18'/>
+          <g transform='translate(29, 32)' fill='#FFFFFF' fillOpacity='0.5'>
+            <polygon transform='translate(12.500000, 9) rotate(180) translate(-12.500000, -9)' points='12.5 0 25 18 0 18'/>
+            <polygon transform='translate(43.500000, 9) rotate(180) translate(-43.500000, -9)' points='43.5 0 56 18 31 18'/>
+            <polygon transform='translate(74.500000, 9) rotate(180) translate(-74.500000, -9)' points='74.5 0 87 18 62 18'/>
           </g>
-          <g transform='translate(13.000000, 41.000000)' fill='#000000' fillOpacity='0.5'>
+          <g transform='translate(13, 41)' fill='#000000' fillOpacity='0.5'>
             <polygon points='12.5 0 25 18 0 18'/>
             <polygon points='43.5 0 56 18 31 18'/>
             <polygon points='74.5 0 87 18 62 18'/>

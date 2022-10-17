@@ -33,7 +33,8 @@ enum TopType {
   ShortHairShortWaved = 'ShortHairShortWaved',
   ShortHairSides = 'ShortHairSides',
   ShortHairTheCaesar = 'ShortHairTheCaesar',
-  ShortHairTheCaesarSidePart = 'ShortHairTheCaesarSidePart'
+  ShortHairTheCaesarSidePart = 'ShortHairTheCaesarSidePart',
+  PrinceCut = 'PrinceCut'
 }
 
 export default TopType

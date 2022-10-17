@@ -28,7 +28,7 @@ const Hijab: FC = ({ children }) => {
         <use xlinkHref={'#' + path1}/>
       </mask>
       <g mask={`url(#${mask1})`}>
-        <g transform='translate(-1.000000, 0.000000)'>
+        <g transform='translate(-1, 0)'>
           <mask id={mask2} fill='white'>
             <use xlinkHref={'#' + path2}/>
           </mask>

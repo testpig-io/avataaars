@@ -26,15 +26,15 @@ const LongHairShavedSides: FC = ({ children }) => {
         <use xlinkHref={'#' + path2}/>
       </mask>
       <g mask={`url(#${mask2})`}>
-        <g transform='translate(-1.000000, 0.000000)'>
-          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(1.000000, 0.000000)'>
+        <g transform='translate(-1, 0)'>
+          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(1, 0)'>
             <mask id={mask3} fill='white'>
               <use xlinkHref={'#' + path3}/>
             </mask>
             <path fill='#CCB55A' mask={`url(#${mask3})`}
                   d='M116.179148,40 L146,40 C171.405098,40 192,60.5949015 192,86 L192,154.108712 C192,180.650314 210.758775,204.349179 222.609956,226.05167 C234.461138,247.754161 215.254522,268.242596 195.770735,276.769484 C190.902336,278.900091 185.645645,280 180.331438,280 L135.26309,280 C78.9108161,280 70.2166412,216.309596 67.6972794,146.504423 L70.2166412,84.1431398 C71.212998,59.4805095 91.4964003,40 116.179148,40 Z'/>
           </g>
-          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(77.000000, 36.000000)'>
+          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(77, 36)'>
             <mask id={mask1} fill='white'>
               <use xlinkHref={'#' + path4}/>
             </mask>

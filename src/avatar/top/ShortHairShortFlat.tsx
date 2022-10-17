@@ -29,7 +29,7 @@ const ShortHairShortFlat: FC = ({ children }) => {
         <use xlinkHref={'#' + path2}/>
       </mask>
       <g mask={`url(#${mask2})`}>
-        <g transform='translate(-1.000000, 0.000000)'>
+        <g transform='translate(-1, 0)'>
           <FacialHair/>
           <mask id={mask1} fill='white'>
             <use xlinkHref={'#' + path1}/>

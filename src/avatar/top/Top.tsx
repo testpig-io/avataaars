@@ -36,6 +36,7 @@ import WinterHat4 from './WinterHat4'
 import { FC, useContext } from 'react'
 import AvatarContext from '../AvatarContext'
 import TopType from './TopType'
+import PrinceCut from './PrinceCut'
 
 const Top: FC = ({ children }) => {
   const type = useContext(AvatarContext).topType ?? TopType.LongHairStraight
@@ -113,6 +114,8 @@ const Top: FC = ({ children }) => {
       return <ShortHairTheCaesar>{children}</ShortHairTheCaesar>
     case TopType.ShortHairTheCaesarSidePart:
       return <ShortHairTheCaesarSidePart>{children}</ShortHairTheCaesarSidePart>
+    case TopType.PrinceCut:
+      return <PrinceCut>{children}</PrinceCut>
   }
 }
 

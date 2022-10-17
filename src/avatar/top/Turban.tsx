@@ -33,17 +33,17 @@ const Turban: FC = ({ children }) => {
         <use xlinkHref={'#' + path1}/>
       </mask>
       <g mask={`url(#${mask1})`}>
-        <g transform='translate(-1.000000, 0.000000)'>
+        <g transform='translate(-1, 0)'>
           <FacialHair/>
-          <g strokeWidth='1' fillRule='evenodd' transform='translate(1.000000, 0.000000)'>
+          <g strokeWidth='1' fillRule='evenodd' transform='translate(1, 0)'>
             <mask id={mask2} fill='white'>
               <use xlinkHref={'#' + path2}/>
             </mask>
           </g>
-          <g strokeWidth='1' fillRule='evenodd' transform='translate(1.000000, 0.000000)'>
+          <g strokeWidth='1' fillRule='evenodd' transform='translate(1, 0)'>
             <path fill='#EDECE3'
                   d='M74.5304294,97.5 C73.529284,95.0905557 73,92.5798498 73,90 C73,71.7746033 99.4151998,57 132,57 C164.5848,57 191,71.7746033 191,90 C191,92.5798498 190.470716,95.0905557 189.469571,97.5 C183.398106,82.8878805 159.972341,72 132,72 C104.027659,72 80.6018941,82.8878805 74.5304294,97.5 Z'/>
-            <g transform='translate(48.000000, 3.000000)'>
+            <g transform='translate(48, 3)'>
               <mask id={mask3} fill='white'>
                 <use xlinkHref={'#' + path3}/>
               </mask>

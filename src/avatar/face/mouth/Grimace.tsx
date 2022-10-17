@@ -6,7 +6,7 @@ export default function Grimace () {
   const mask1 = useMemo(() => uniqueId('react-mask-'), [])
 
   return (
-    <g transform='translate(2.000000, 52.000000)'>
+    <g transform='translate(2, 52)'>
       <defs>
         <rect id={path1} x='24' y='9' width='60' height='22' rx='11'/>
       </defs>

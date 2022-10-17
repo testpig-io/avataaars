@@ -9,7 +9,7 @@ export default function Sunglasses () {
   const linearGradient2 = useMemo(() => uniqueId('react-linear-gradient-'), [])
 
   return (
-    <g fill='none' transform='translate(62.000000, 85.000000)' strokeWidth='1'>
+    <g fill='none' transform='translate(62, 85)' strokeWidth='1'>
       <defs>
         <filter x='-0.8%' y='-2.6%' width='101.6%' height='110.5%' filterUnits='objectBoundingBox' id={filter1}>
           <feOffset dx='0' dy='2' in='SourceAlpha' result='shadowOffsetOuter1'/>
@@ -32,7 +32,7 @@ export default function Sunglasses () {
           <stop stopColor='#000000' stopOpacity='0.5' offset='70.5058195%'/>
         </linearGradient>
       </defs>
-      <g filter={`url(#${filter1})`} transform='translate(8.000000, 8.000000)'>
+      <g filter={`url(#${filter1})`} transform='translate(8, 8)'>
         <use fillOpacity='0.700000048' fill='#000000' xlinkHref={'#' + path1}/>
         <use fill={`url(#${linearGradient1})`} style={{ mixBlendMode: 'screen' }} xlinkHref={'#' + path1}/>
         <use fillOpacity='0.700000048' fill='#000000' xlinkHref={'#' + path2}/>

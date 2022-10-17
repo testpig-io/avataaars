@@ -1,6 +1,6 @@
 export default function WinkWacky () {
   return (
-    <g transform='translate(0.000000, 8.000000)'>
+    <g transform='translate(0, 8)'>
       <circle fill='#FFFFFF' cx='82' cy='22' r='12'/>
       <circle fillOpacity='0.699999988' fill='#000000' cx='82' cy='22' r='6'/>
       <path fillOpacity='0.599999964' fill='#000000'

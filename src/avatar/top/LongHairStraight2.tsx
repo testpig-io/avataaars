@@ -23,8 +23,8 @@ const LongHairStraight2: FC = ({ children }) => {
         <use xlinkHref={'#' + path1}/>
       </mask>
       <g mask={`url(#${mask1})`}>
-        <g transform='translate(-1.000000, 0.000000)'>
-          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(40.000000, 15.000000)'>
+        <g transform='translate(-1, 0)'>
+          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(40, 15)'>
             <mask id={mask2} fill='white'>
               <use xlinkHref={'#' + path2}/>
             </mask>

@@ -26,8 +26,8 @@ const WinterHat1: FC = ({ children }) => {
       <mask id={mask1} fill='white'>
         <use xlinkHref={'#' + path3}/>
       </mask>
-      <g transform='translate(-1.000000, 0.000000)'>
-        <g strokeWidth='1' fillRule='evenodd' transform='translate(63.000000, 20.000000)'>
+      <g transform='translate(-1, 0)'>
+        <g strokeWidth='1' fillRule='evenodd' transform='translate(63, 20)'>
           <path fill='#F4F4F4'
                 d='M1,48 L23.6714286,48 L23.6714286,153.664286 C23.6714286,159.924828 18.5962564,165 12.3357143,165 C6.07517216,165 1,159.924828 1,153.664286 L1,48 Z M116.328571,48 L139,48 L139,153.664286 C139,159.924828 133.924828,165 127.664286,165 C121.403744,165 116.328571,159.924828 116.328571,153.664286 L116.328571,48 Z'/>
           <mask id={mask2} fill='white'>

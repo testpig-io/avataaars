@@ -20,10 +20,10 @@ const LongHairMiaWallace: FC = ({ children }) => {
         <use xlinkHref={'#' + path1}/>
       </mask>
       <g mask={`url(#${mask1})`}>
-        <g transform='translate(-1.000000, 0.000000)'>
+        <g transform='translate(-1, 0)'>
           <path fillOpacity='0.16' fill='#000000' fillRule='evenodd'
                 d='M69.0330562,76.212888 C81.9708809,43.1292208 95.6458945,26.5873873 110.058097,26.5873873 C110.596882,26.5873873 139.311316,26.3494141 158.112657,26.226792 C178.767149,35.5853581 193,55.3036503 193,78.114622 L193,93 L110.058097,93 L107.252975,69.820435 L103.373552,93 L69,93 L69,78.114622 C69,77.478246 69.0110772,76.844277 69.0330621,76.2128728 L69.0330562,76.212888 Z'/>
-          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(40.000000, 19.000000)'>
+          <g strokeWidth='1' fill='none' fillRule='evenodd' transform='translate(40, 19)'>
             <mask id={mask2} fill='white'>
               <use xlinkHref={'#' + path2}/>
             </mask>

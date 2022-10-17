@@ -37,7 +37,7 @@ export default function Avatar ({
         </defs>
         <g stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
           {circle && (
-            <g strokeWidth='1' fillRule='evenodd' transform='translate(12.000000, 40.000000)'>
+            <g strokeWidth='1' fillRule='evenodd' transform='translate(12, 40)'>
               <mask id={mask1} fill='white'>
                 <use xlinkHref={'#' + path1}/>
               </mask>
@@ -53,7 +53,7 @@ export default function Avatar ({
             </mask>
           )}
           <g strokeWidth='1' fillRule='evenodd' mask={'url(#' + mask2 + ')'}>
-            <g transform='translate(32.000000, 36.000000)'>
+            <g transform='translate(32, 36)'>
               <mask id={mask3} fill='white'>
                 <use xlinkHref={'#' + path3}/>
               </mask>

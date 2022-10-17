@@ -29,9 +29,9 @@ const ShortHairTheCaesar: FC = ({ children }) => {
         <use xlinkHref={'#' + path1}/>
       </mask>
       <g mask={`url(#${mask1})`}>
-        <g transform='translate(-1.000000, 0.000000)'>
+        <g transform='translate(-1, 0)'>
           <FacialHair/>
-          <g strokeWidth='1' fillRule='evenodd' transform='translate(75.000000, 34.000000)'>
+          <g strokeWidth='1' fillRule='evenodd' transform='translate(75, 34)'>
             <mask id={mask2} fill='white'>
               <use xlinkHref={'#' + path2}/>
             </mask>

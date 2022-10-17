@@ -35,8 +35,8 @@ const WinterHat4: FC = ({ children }) => {
       <mask id={mask1} fill='white'>
         <use xlinkHref={'#' + path5}/>
       </mask>
-      <g transform='translate(-1.000000, 0.000000)'>
-        <g strokeWidth='1' fillRule='evenodd' transform='translate(65.000000, 4.000000)'>
+      <g transform='translate(-1, 0)'>
+        <g strokeWidth='1' fillRule='evenodd' transform='translate(65, 4)'>
           <mask id={mask2} fill='white'>
             <use xlinkHref={'#' + path1}/>
           </mask>

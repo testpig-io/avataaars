@@ -5,7 +5,7 @@ import Nose from './nose/Default'
 
 export default function Face () {
   return (
-    <g transform='translate(76.000000, 82.000000)' fill='#000000'>
+    <g transform='translate(76, 82)' fill='#000000'>
       <Mouth/>
       <Nose/>
       <Eyes/>

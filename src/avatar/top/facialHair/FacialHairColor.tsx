@@ -10,7 +10,7 @@ export default function FacialHairColor ({ maskID }: Props) {
   const color = useContext(AvatarContext).facialHairColor
   return (
     <g mask={`url(#${maskID})`} fill={getFacialHairColorCode(color)}>
-      <g transform='translate(-32.000000, 0.000000)'>
+      <g transform='translate(-32, 0)'>
         <rect x='0' y='0' width='264' height='244'/>
       </g>
     </g>
