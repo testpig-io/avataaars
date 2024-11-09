@@ -1,9 +1,8 @@
-import uniqueId from '../../../util/uniqueId'
-import { useMemo } from 'react'
+import { useId } from 'react'
 
 export default function Round () {
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
-  const filter1 = useMemo(() => uniqueId('react-filter-'), [])
+  const path1 = useId()
+  const filter1 = useId()
 
   return (
     <g fill='none' transform='translate(62, 85)'>

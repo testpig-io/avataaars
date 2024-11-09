@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import AvatarContext from '../AvatarContext'
 import Eyepatch from './Eyepatch'
 import Hat from './Hat'
 import Hijab from './Hijab'
@@ -17,6 +19,7 @@ import LongHairStraight from './LongHairStraight'
 import LongHairStraight2 from './LongHairStraight2'
 import LongHairStraightStrand from './LongHairStraightStrand'
 import NoHair from './NoHair'
+import PrinceCut from './PrinceCut'
 import ShortHairDreads01 from './ShortHairDreads01'
 import ShortHairDreads02 from './ShortHairDreads02'
 import ShortHairFrizzle from './ShortHairFrizzle'
@@ -28,17 +31,14 @@ import ShortHairShortWaved from './ShortHairShortWaved'
 import ShortHairSides from './ShortHairSides'
 import ShortHairTheCaesar from './ShortHairTheCaesar'
 import ShortHairTheCaesarSidePart from './ShortHairTheCaesarSidePart'
+import TopType from './TopType'
 import Turban from './Turban'
 import WinterHat1 from './WinterHat1'
 import WinterHat2 from './WinterHat2'
 import WinterHat3 from './WinterHat3'
 import WinterHat4 from './WinterHat4'
-import { FC, useContext } from 'react'
-import AvatarContext from '../AvatarContext'
-import TopType from './TopType'
-import PrinceCut from './PrinceCut'
 
-const Top: FC = ({ children }) => {
+const Top = ({ children }) => {
   const type = useContext(AvatarContext).topType ?? TopType.LongHairStraight
   switch (type) {
     case TopType.NoHair:

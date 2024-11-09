@@ -1,13 +1,12 @@
-import { useContext, useMemo } from 'react'
-import uniqueId from '../../util/uniqueId'
+import { useContext, useId } from 'react'
 import Graphics from './Graphics'
 import ClotheColor from './ClotheColor'
 import AvatarContext from '../AvatarContext'
 
 export default function GraphicShirt () {
   const graphicType = useContext(AvatarContext).graphicType
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
-  const mask1 = useMemo(() => uniqueId('react-mask-'), [])
+  const path1 = useId()
+  const mask1 = useId()
 
   return (
     <g transform='translate(0, 170)'>

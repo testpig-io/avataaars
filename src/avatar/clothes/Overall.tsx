@@ -1,10 +1,9 @@
-import { useMemo } from 'react'
-import uniqueId from '../../util/uniqueId'
+import { useId } from 'react'
 import ClotheColor from './ClotheColor'
 
 export default function Overall () {
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
-  const mask1 = useMemo(() => uniqueId('react-mask-'), [])
+  const path1 = useId()
+  const mask1 = useId()
 
   return (
     <g transform='translate(0, 170)'>

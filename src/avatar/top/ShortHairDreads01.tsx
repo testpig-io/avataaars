@@ -1,14 +1,13 @@
-import uniqueId from '../../util/uniqueId'
+import { useId } from 'react'
 import FacialHair from './facialHair'
 import HairColor from './HairColor'
-import { FC, useMemo } from 'react'
 
-const ShortHairDreads01: FC = ({ children }) => {
-  const mask1 = useMemo(() => uniqueId('react-mask-'), [])
-  const mask2 = useMemo(() => uniqueId('react-mask-'), [])
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
-  const path2 = useMemo(() => uniqueId('react-path-'), [])
-  const path3 = useMemo(() => uniqueId('react-path-'), [])
+const ShortHairDreads01 = ({ children }) => {
+  const mask1 = useId()
+  const mask2 = useId()
+  const path1 = useId()
+  const path2 = useId()
+  const path3 = useId()
 
   return (
     <g strokeWidth='1' fillRule='evenodd'>

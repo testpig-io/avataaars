@@ -1,19 +1,18 @@
-import uniqueId from '../../util/uniqueId'
+import { useId } from 'react'
 import FacialHair from './facialHair'
 import HatColor from './HatColor'
-import { FC, useMemo } from 'react'
 
-const WinterHat4: FC = ({ children }) => {
-  const filter1 = useMemo(() => uniqueId('react-filter-'), [])
-  const mask1 = useMemo(() => uniqueId('react-mask-'), [])
-  const mask2 = useMemo(() => uniqueId('react-mask-'), [])
-  const mask3 = useMemo(() => uniqueId('react-mask-'), [])
-  const mask4 = useMemo(() => uniqueId('react-mask-'), [])
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
-  const path2 = useMemo(() => uniqueId('react-path-'), [])
-  const path3 = useMemo(() => uniqueId('react-path-'), [])
-  const path4 = useMemo(() => uniqueId('react-path-'), [])
-  const path5 = useMemo(() => uniqueId('react-path-'), [])
+const WinterHat4 = ({ children }) => {
+  const filter1 = useId()
+  const mask1 = useId()
+  const mask2 = useId()
+  const mask3 = useId()
+  const mask4 = useId()
+  const path1 = useId()
+  const path2 = useId()
+  const path3 = useId()
+  const path4 = useId()
+  const path5 = useId()
 
   return (
     <g>

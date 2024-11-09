@@ -1,6 +1,5 @@
-import uniqueId from '../../util/uniqueId'
 import GraphicType from './GraphicType'
-import { useMemo } from 'react'
+import { useId } from 'react'
 
 export interface Props {
   maskID: string
@@ -167,8 +166,8 @@ export function Resist ({ maskID }: Props) {
 }
 
 export function Bear ({ maskID }: Props) {
-  const mask1 = useMemo(() => uniqueId('react-mask-'), [])
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
+  const mask1 = useId()
+  const path1 = useId()
 
   return (
     <g mask={`url(#${maskID})`} strokeWidth='1' fillRule='evenodd'>

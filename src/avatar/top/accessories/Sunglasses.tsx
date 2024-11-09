@@ -1,12 +1,11 @@
-import uniqueId from '../../../util/uniqueId'
-import { useMemo } from 'react'
+import { useId } from 'react'
 
 export default function Sunglasses () {
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
-  const path2 = useMemo(() => uniqueId('react-path-'), [])
-  const filter1 = useMemo(() => uniqueId('react-filter-'), [])
-  const linearGradient1 = useMemo(() => uniqueId('react-linear-gradient-'), [])
-  const linearGradient2 = useMemo(() => uniqueId('react-linear-gradient-'), [])
+  const path1 = useId()
+  const path2 = useId()
+  const filter1 = useId()
+  const linearGradient1 = useId()
+  const linearGradient2 = useId()
 
   return (
     <g fill='none' transform='translate(62, 85)' strokeWidth='1'>

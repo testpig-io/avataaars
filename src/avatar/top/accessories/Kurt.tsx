@@ -1,8 +1,7 @@
-import uniqueId from '../../../util/uniqueId'
-import { useMemo } from 'react'
+import { useId } from 'react'
 
 export default function Kurt () {
-  const filter1 = useMemo(() => uniqueId('react-filter-'), [])
+  const filter1 = useId()
 
   return (
     <g fill='none' transform='translate(62, 85)' strokeWidth='1'>

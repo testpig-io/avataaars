@@ -1,12 +1,11 @@
-import Skin from './Skin'
+import { SVGProps, useId } from 'react'
+import AvatarContext from './AvatarContext'
+import AvatarProps from './AvatarProps'
 import Clothe from './clothes'
 import Face from './face'
+import Skin from './Skin'
 import Top from './top'
 import Accessories from './top/accessories'
-import uniqueId from '../util/uniqueId'
-import { SVGProps, useMemo } from 'react'
-import AvatarProps from './AvatarProps'
-import AvatarContext from './AvatarContext'
 
 type Props = AvatarProps & SVGProps<SVGSVGElement>
 
@@ -14,12 +13,12 @@ export default function Avatar ({
                                   style, circle, topType, accessoriesType, hairColor, facialHairType, facialHairColor, clotheType, clotheColor, graphicType,
                                   eyeType, eyebrowType, mouthType, skinColor, hatColor, ...props
                                 }: Props) {
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
-  const path2 = useMemo(() => uniqueId('react-path-'), [])
-  const path3 = useMemo(() => uniqueId('react-path-'), [])
-  const mask1 = useMemo(() => uniqueId('react-mask-'), [])
-  const mask2 = useMemo(() => uniqueId('react-mask-'), [])
-  const mask3 = useMemo(() => uniqueId('react-mask-'), [])
+  const path1 = useId()
+  const path2 = useId()
+  const path3 = useId()
+  const mask1 = useId()
+  const mask2 = useId()
+  const mask3 = useId()
   return (
     <AvatarContext.Provider value={{
       topType, accessoriesType, hairColor, facialHairType, facialHairColor, clotheType, clotheColor, graphicType, eyeType, eyebrowType, mouthType, skinColor,

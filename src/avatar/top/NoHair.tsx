@@ -1,11 +1,10 @@
-import uniqueId from '../../util/uniqueId'
 import FacialHair from './facialHair'
-import { useMemo } from 'react'
+import { useId } from 'react'
 
 const NoHair = ({ children }) => {
-  const filter1 = useMemo(() => uniqueId('react-filter-'), [])
-  const mask1 = useMemo(() => uniqueId('react-mask-'), [])
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
+  const filter1 = useId()
+  const mask1 = useId()
+  const path1 = useId()
 
   return (
     <g strokeWidth='1' fillRule='evenodd'>

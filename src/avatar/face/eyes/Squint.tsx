@@ -1,11 +1,10 @@
-import uniqueId from '../../../util/uniqueId'
-import { useMemo } from 'react'
+import { useId } from 'react'
 
 export default function Squint () {
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
-  const path2 = useMemo(() => uniqueId('react-path-'), [])
-  const mask1 = useMemo(() => uniqueId('react-mask-'), [])
-  const mask2 = useMemo(() => uniqueId('react-mask-'), [])
+  const path1 = useId()
+  const path2 = useId()
+  const mask1 = useId()
+  const mask2 = useId()
   return (
     <g transform='translate(0, 8)'>
       <defs>

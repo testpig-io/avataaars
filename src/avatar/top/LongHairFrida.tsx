@@ -1,18 +1,17 @@
-import uniqueId from '../../util/uniqueId'
+import { useId } from 'react'
 import FacialHair from './facialHair'
-import { FC, useMemo } from 'react'
 
-const LongHairFrida: FC = ({ children }) => {
-  const filter1 = useMemo(() => uniqueId('react-filter-'), [])
-  const filter2 = useMemo(() => uniqueId('react-filter-'), [])
-  const filter3 = useMemo(() => uniqueId('react-filter-'), [])
-  const filter4 = useMemo(() => uniqueId('react-filter-'), [])
-  const filter5 = useMemo(() => uniqueId('react-filter-'), [])
-  const filter6 = useMemo(() => uniqueId('react-filter-'), [])
-  const filter7 = useMemo(() => uniqueId('react-filter-'), [])
-  const mask1 = useMemo(() => uniqueId('react-mask-'), [])
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
-  const path2 = useMemo(() => uniqueId('react-path-'), [])
+const LongHairFrida = ({ children }) => {
+  const filter1 = useId()
+  const filter2 = useId()
+  const filter3 = useId()
+  const filter4 = useId()
+  const filter5 = useId()
+  const filter6 = useId()
+  const filter7 = useId()
+  const mask1 = useId()
+  const path1 = useId()
+  const path2 = useId()
 
   return (
     <g strokeWidth='1' fillRule='evenodd'>

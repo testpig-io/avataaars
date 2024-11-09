@@ -1,9 +1,8 @@
-import uniqueId from '../../../util/uniqueId'
-import { useMemo } from 'react'
+import { useId } from 'react'
 
 export default function Tongue () {
-  const path1 = useMemo(() => uniqueId('react-path-'), [])
-  const mask1 = useMemo(() => uniqueId('react-mask-'), [])
+  const path1 = useId()
+  const mask1 = useId()
 
   return (
     <g transform='translate(2, 52)'>
